@@ -1,0 +1,10 @@
+INSERT INTO tb_user (name, email, phone, password) VALUES ('João Silva', 'joao.silva@email.com', '2199999999', 'senha123');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Maria Souza', 'maria.souza@email.com', '1188888888', 'mypass');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Carlos Oliveira', 'carlos.oliveira@email.com', '3177777777', 'secret');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Ana Pereira', 'ana.pereira@email.com', '4166666666', 'secure1');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Ricardo Gomes', 'ricardo.gomes@email.com', '5155555555', 'testpass');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Fernanda Costa', 'fernanda.costa@email.com', '6144444444', 'strongpwd');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Pedro Rodrigues', 'pedro.rodrigues@email.com', '7133333333', 'mysecret');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Juliana Almeida', 'juliana.almeida@email.com', '8122222222', 'password');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Lucas Martins', 'lucas.martins@email.com', '9111111111', 'simple1');
+INSERT INTO tb_user (name, email, phone, password) VALUES ('Patrícia Nunes', 'patricia.nunes@email.com', '2700000000', 'another');
