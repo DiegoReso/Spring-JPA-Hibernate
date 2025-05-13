@@ -9,13 +9,13 @@ INSERT INTO tb_user (name, email, phone, password) VALUES ('Juliana Almeida', 'j
 INSERT INTO tb_user (name, email, phone, password) VALUES ('Lucas Martins', 'lucas.martins@email.com', '9111111111', 'simple1');
 INSERT INTO tb_user (name, email, phone, password) VALUES ('Patrícia Nunes', 'patricia.nunes@email.com', '2700000000', 'another');
 
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:00:00Z', 1);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:05:30Z', 2);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:10:45Z', 3);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:15:15Z', 1);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:20:00Z', 4);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:25:20Z', 2);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:30:50Z', 5);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:35:05Z', 3);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:40:30Z', 6);
-INSERT INTO tb_order (moment, client_id) VALUES ('2025-05-13T19:45:00Z', 10);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:00:00Z', 1, 1);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:05:30Z', 2, 2);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:10:45Z', 2, 3);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:15:15Z', 3, 1);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:20:00Z', 4, 4);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:25:20Z', 5, 2);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:30:50Z', 1, 5);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:35:05Z', 2, 3);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:40:30Z', 5, 6);
+INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:45:00Z', 4, 10);
