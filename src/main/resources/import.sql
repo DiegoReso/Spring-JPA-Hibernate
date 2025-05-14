@@ -52,3 +52,14 @@ INSERT INTO tb_product_category (product_id, category_id) VALUES (6, 2);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (7, 10);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (8, 6);
 INSERT INTO tb_product_category (product_id, category_id) VALUES (9, 7);
+
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (1, 1, 2, 2299.90);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (1, 5, 1, 59.90);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (2, 2, 1, 2799.00);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (3, 3, 3, 1599.50);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (4, 4, 2, 199.99);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (5, 6, 1, 249.75);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (6, 7, 1, 129.00);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (7, 8, 2, 179.80);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (8, 9, 1, 399.90);
+INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (9, 10, 1, 899.00);
