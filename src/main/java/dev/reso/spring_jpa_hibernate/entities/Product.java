@@ -1,6 +1,7 @@
 package dev.reso.spring_jpa_hibernate.entities;
 
 
+
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -31,7 +32,12 @@ public class Product implements Serializable {
     private Double price;
     private String imgUrl;
 
-    @Transient
+    @ManyToMany
+    @JoinTable(name = "tb_product_category",
+            joinColumns = @JoinColumn(name = "product_id"),
+            inverseJoinColumns = @JoinColumn(name = "category_id")
+    )
+
     @Setter(AccessLevel.NONE)
     private Set<Category> categories = new HashSet<>();
 

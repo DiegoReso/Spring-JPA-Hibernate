@@ -1,6 +1,7 @@
 package dev.reso.spring_jpa_hibernate.entities;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -27,7 +28,8 @@ public class Category implements Serializable {
     private Long id;
     private String name;
 
-    @Transient
+    @JsonIgnore
+    @ManyToMany(mappedBy = "categories")
     @Setter(AccessLevel.NONE)
     private Set<Product> products = new HashSet<>();
 

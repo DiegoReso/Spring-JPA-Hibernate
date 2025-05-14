@@ -41,3 +41,14 @@ INSERT INTO tb_product (name, description, price, img_url) VALUES ('Cafeteira El
 INSERT INTO tb_product (name, description, price, img_url) VALUES ('Fone de Ouvido Bluetooth Sem Fio', 'Liberdade e qualidade de som para o seu dia a dia.', 179.80, 'https://example.com/fonebluetooth.jpg');
 INSERT INTO tb_product (name, description, price, img_url) VALUES ('Cadeira de Escritório Ergonômica', 'Conforto e suporte para longas horas de trabalho.', 399.90, 'https://example.com/cadeiraescritorio.jpg');
 INSERT INTO tb_product (name, description, price, img_url) VALUES ('Tablet Android 10" 64GB', 'Ideal para leitura, vídeos e navegação na web.', 899.00, 'https://example.com/tablet10.jpg');
+
+INSERT INTO tb_product_category (product_id, category_id) VALUES (1, 3);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (2, 8);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 1);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (3, 4);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (4, 9);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (5, 5);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (6, 2);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (7, 10);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (8, 6);
+INSERT INTO tb_product_category (product_id, category_id) VALUES (9, 7);
