@@ -19,3 +19,14 @@ INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:30
 INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:35:05Z', 2, 3);
 INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:40:30Z', 5, 6);
 INSERT INTO tb_order (moment, order_status, client_id) VALUES ('2025-05-13T19:45:00Z', 4, 10);
+
+INSERT INTO tb_category (name) VALUES ('Electronics');
+INSERT INTO tb_category (name) VALUES ('Books');
+INSERT INTO tb_category (name) VALUES ('Clothing');
+INSERT INTO tb_category (name) VALUES ('Home & Kitchen');
+INSERT INTO tb_category (name) VALUES ('Sports & Outdoors');
+INSERT INTO tb_category (name) VALUES ('Beauty & Personal Care');
+INSERT INTO tb_category (name) VALUES ('Toys & Games');
+INSERT INTO tb_category (name) VALUES ('Automotive');
+INSERT INTO tb_category (name) VALUES ('Health & Household');
+INSERT INTO tb_category (name) VALUES ('Tools & Home Improvement');
