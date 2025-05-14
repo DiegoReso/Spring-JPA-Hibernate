@@ -30,3 +30,14 @@ INSERT INTO tb_category (name) VALUES ('Toys & Games');
 INSERT INTO tb_category (name) VALUES ('Automotive');
 INSERT INTO tb_category (name) VALUES ('Health & Household');
 INSERT INTO tb_category (name) VALUES ('Tools & Home Improvement');
+
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Smart TV LED 50" 4K', 'Tela grande com cores vibrantes e resolução Ultra HD.', 2299.90, 'https://example.com/tv50.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Notebook Core i5 8GB RAM 256GB SSD', 'Ideal para trabalho e estudo, rápido e eficiente.', 2799.00, 'https://example.com/notebooki5.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Smartphone Android 128GB', 'Câmera de alta resolução e bateria de longa duração.', 1599.50, 'https://example.com/smartphone128.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Jogo de Panelas Antiaderente 5 Peças', 'Cozinhe com praticidade e sem grudar.', 199.99, 'https://example.com/panelas5.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Livro "O Senhor dos Anéis"', 'Edição especial da clássica obra de Tolkien.', 59.90, 'https://example.com/lotr.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Tênis Esportivo Masculino', 'Confortável para corrida e atividades físicas.', 249.75, 'https://example.com/tenis.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Cafeteira Elétrica Programável', 'Prepare seu café fresquinho a qualquer hora.', 129.00, 'https://example.com/cafeteira.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Fone de Ouvido Bluetooth Sem Fio', 'Liberdade e qualidade de som para o seu dia a dia.', 179.80, 'https://example.com/fonebluetooth.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Cadeira de Escritório Ergonômica', 'Conforto e suporte para longas horas de trabalho.', 399.90, 'https://example.com/cadeiraescritorio.jpg');
+INSERT INTO tb_product (name, description, price, img_url) VALUES ('Tablet Android 10" 64GB', 'Ideal para leitura, vídeos e navegação na web.', 899.00, 'https://example.com/tablet10.jpg');
