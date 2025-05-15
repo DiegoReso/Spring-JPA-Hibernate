@@ -1,6 +1,6 @@
 package dev.reso.spring_jpa_hibernate.entities;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
+
 import dev.reso.spring_jpa_hibernate.entities.enums.OrderStatus;
 import jakarta.persistence.*;
 import lombok.*;
@@ -16,8 +16,8 @@ import java.util.Set;
 @Entity
 @Table(name = "tb_order")
 public class Order implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -45,7 +45,29 @@ public class Order implements Serializable {
         setOrderStatus(orderStatus);
     }
 
+    public Long getId() {
+        return id;
+    }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Instant getMoment() {
+        return moment;
+    }
+
+    public void setMoment(Instant moment) {
+        this.moment = moment;
+    }
+
+    public User getClient() {
+        return client;
+    }
+
+    public void setClient(User client) {
+        this.client = client;
+    }
 
     public OrderStatus getOrderStatus() {
         return OrderStatus.valueOf(orderStatus);
@@ -57,6 +79,18 @@ public class Order implements Serializable {
         }
     }
 
+
+    public Set<OrderItem> getItems() {
+        return items;
+    }
+
+    public Double getTotal() {
+        double sum = 0.0;
+        for (OrderItem x : items) {
+            sum += x.getSubTotal();
+        }
+        return sum;
+    }
 
     @Override
     public int hashCode() {
