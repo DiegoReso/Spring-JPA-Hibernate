@@ -63,3 +63,14 @@ INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (6, 7, 
 INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (7, 8, 2, 179.80);
 INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (8, 9, 1, 399.90);
 INSERT INTO tb_order_item (order_id, product_id, quantity, price) VALUES (9, 10, 1, 899.00);
+
+INSERT INTO tb_payment (order_id, moment) VALUES (1, '2025-05-13T19:00:00Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (2, '2025-05-13T22:05:30ZZ');
+INSERT INTO tb_payment (order_id, moment) VALUES (3, '2025-05-13T19:10:45Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (4, '2025-05-13T19:15:15Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (5, '2025-05-13T19:20:00Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (6, '2025-05-13T19:25:20Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (7, '2025-05-13T19:30:50Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (8, '2025-05-13T19:35:05Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (9, '2025-05-13T19:40:30Z');
+INSERT INTO tb_payment (order_id, moment) VALUES (10, '2025-05-13T19:45:00Z');
