@@ -5,12 +5,6 @@ import dev.reso.spring_jpa_hibernate.entities.pk.OrderItemPK;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-import java.io.Serial;
 import java.io.Serializable;
 
 
@@ -73,6 +67,8 @@ public class OrderItem implements Serializable {
     public Double getSubTotal() {
         return price * quantity;
     }
+
+
 
     @Override
     public int hashCode() {

@@ -25,5 +25,8 @@ public class UserService {
         return user.orElse(null);
     }
 
+    public User insertUser(User user){
+         return repository.save(user);
+    }
 
 }
