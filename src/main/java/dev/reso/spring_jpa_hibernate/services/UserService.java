@@ -3,7 +3,11 @@ package dev.reso.spring_jpa_hibernate.services;
 
 import dev.reso.spring_jpa_hibernate.entities.User;
 import dev.reso.spring_jpa_hibernate.repositories.UserRepository;
+import dev.reso.spring_jpa_hibernate.services.exceptions.DatabaseException;
+import dev.reso.spring_jpa_hibernate.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,7 +27,7 @@ public class UserService {
 
     public User findById(Long id){
         Optional<User> user = repository.findById(id);
-        return user.orElse(null);
+        return user.orElseThrow(() -> new ResourceNotFoundException(id));
     }
 
     public User insertUser(User user){
@@ -31,7 +35,14 @@ public class UserService {
     }
 
     public void deleteUser(Long id){
-        repository.deleteById(id);
+        try{
+            repository.deleteById(id);
+        } catch (EmptyResultDataAccessException e) {
+            throw new ResourceNotFoundException(id);
+        } catch (DataIntegrityViolationException e) {
+            throw new DatabaseException(e.getMessage());
+        }
+
     }
 
     public User updateUser(Long id, User user){
